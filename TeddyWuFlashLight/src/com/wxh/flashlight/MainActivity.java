@@ -35,11 +35,12 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		HideStatusBase();
+//		HideStatusBase();
 		setContentView(R.layout.activity_main);
 
 		statusButton = (Button) findViewById(R.id.statusButton);
 		statusButton.setOnClickListener(new Mybutton());
+		statusButton.performClick();
 		
 		mylayout = (RelativeLayout) findViewById(R.id.relativelayout);
 		setColor(R.color.white);
